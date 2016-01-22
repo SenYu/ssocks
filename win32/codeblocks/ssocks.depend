@@ -1,0 +1,229 @@
+# depslib dependency file v1.0
+1453302415 source:e:\workspace\git\ssocks\src\auth-util.c
+	<libsocks/output-util.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1453302415 e:\workspace\git\ssocks\src\\libsocks\output-util.h
+	<stdlib.h>
+
+1453302415 source:e:\workspace\git\ssocks\src\configd-util.c
+	"configd-util.h"
+	<libsocks/output-util.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<strings.h>
+	<unistd.h>
+
+1453302415 e:\workspace\git\ssocks\src\configd-util.h
+	<config.h>
+	<string.h>
+
+1453612191 e:\workspace\git\ssocks\src\\config.h
+
+1453302415 source:e:\workspace\git\ssocks\src\libsocks\bor-util.c
+	"bor-util.h"
+
+1453302415 e:\workspace\git\ssocks\src\libsocks\bor-util.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<signal.h>
+	<time.h>
+	<errno.h>
+	"unisocket.h"
+
+1453302415 e:\workspace\git\ssocks\src\libsocks\unisocket.h
+	<winsock2.h>
+	<ws2tcpip.h>
+	<stdint.h>
+	<unistd.h>
+	<sys/wait.h>
+	<sys/socket.h>
+	<sys/un.h>
+	<netinet/ip.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<sys/time.h>
+
+1453302415 source:e:\workspace\git\ssocks\src\libsocks\client.c
+	"client.h"
+	"bor-util.h"
+
+1453302415 e:\workspace\git\ssocks\src\libsocks\client.h
+	"socks-common.h"
+
+1453302415 e:\workspace\git\ssocks\src\libsocks\socks-common.h
+	<config.h>
+	<stdint.h>
+	"unisocket.h"
+	"output-util.h"
+	"ssl-util.h"
+
+1453302415 e:\workspace\git\ssocks\src\libsocks\output-util.h
+	<stdlib.h>
+
+1453302415 e:\workspace\git\ssocks\src\libsocks\ssl-util.h
+	<config.h>
+	<openssl/crypto.h>
+	<openssl/ssl.h>
+	<openssl/err.h>
+
+1453302415 source:e:\workspace\git\ssocks\src\libsocks\log-util.c
+	"output-util.h"
+	"socks-common.h"
+	<stdio.h>
+	<time.h>
+
+1453304835 source:e:\workspace\git\ssocks\src\libsocks\net-util.c
+	"net-util.h"
+	"bor-util.h"
+	"output-util.h"
+
+1453305062 e:\workspace\git\ssocks\src\libsocks\net-util.h
+	"unisocket.h"
+	<config.h>
+
+1453302415 source:e:\workspace\git\ssocks\src\libsocks\output-util.c
+	"output-util.h"
+	<stdarg.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+
+1453302415 source:e:\workspace\git\ssocks\src\libsocks\socks-common.c
+	"socks-common.h"
+
+1453302415 source:e:\workspace\git\ssocks\src\libsocks\socks4.c
+	"socks4.h"
+	<string.h>
+	<stdio.h>
+
+1453302415 e:\workspace\git\ssocks\src\libsocks\socks4.h
+	"socks-common.h"
+	"client.h"
+
+1453302415 source:e:\workspace\git\ssocks\src\libsocks\socks5-client.c
+	"socks-common.h"
+	"socks5-client.h"
+	"socks5-server.h"
+	"net-util.h"
+	"bor-util.h"
+
+1453302415 e:\workspace\git\ssocks\src\libsocks\socks5-client.h
+	"socks-common.h"
+	"client.h"
+
+1453302415 e:\workspace\git\ssocks\src\libsocks\socks5-server.h
+	"socks-common.h"
+	"client.h"
+
+1453305289 source:e:\workspace\git\ssocks\src\libsocks\socks5-server.c
+	"socks-common.h"
+	"socks5-server.h"
+	"net-util.h"
+	"log-util.h"
+	"bor-util.h"
+	<config.h>
+
+1453302415 e:\workspace\git\ssocks\src\libsocks\log-util.h
+	"socks-common.h"
+
+1453302415 source:e:\workspace\git\ssocks\src\libsocks\ssl-util.c
+	"ssl-util.h"
+	"output-util.h"
+
+1353751060 source:e:\workspace\git\ssocks\src\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1453305484 source:e:\workspace\git\ssocks\src\rssocks.c
+	<libsocks/bor-util.h>
+	<libsocks/net-util.h>
+	<libsocks/output-util.h>
+	<libsocks/socks-common.h>
+	<libsocks/socks5-client.h>
+	<libsocks/socks5-server.h>
+	<config.h>
+	"win_getopt.h"
+	<getopt.h>
+
+1453302415 e:\workspace\git\ssocks\src\\libsocks\bor-util.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<signal.h>
+	<time.h>
+	<errno.h>
+	"unisocket.h"
+
+1453302415 e:\workspace\git\ssocks\src\\libsocks\unisocket.h
+	<winsock2.h>
+	<ws2tcpip.h>
+	<stdint.h>
+	<unistd.h>
+	<sys/wait.h>
+	<sys/socket.h>
+	<sys/un.h>
+	<netinet/ip.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<sys/time.h>
+
+1453611870 e:\workspace\git\ssocks\src\\libsocks\net-util.h
+	"unisocket.h"
+	<config.h>
+
+1453302415 e:\workspace\git\ssocks\src\\libsocks\socks-common.h
+	<config.h>
+	<stdint.h>
+	"unisocket.h"
+	"output-util.h"
+	"ssl-util.h"
+
+1453302415 e:\workspace\git\ssocks\src\\libsocks\ssl-util.h
+	<config.h>
+	<openssl/crypto.h>
+	<openssl/ssl.h>
+	<openssl/err.h>
+
+1453302415 e:\workspace\git\ssocks\src\\libsocks\socks5-client.h
+	"socks-common.h"
+	"client.h"
+
+1453302415 e:\workspace\git\ssocks\src\\libsocks\client.h
+	"socks-common.h"
+
+1453302415 e:\workspace\git\ssocks\src\\libsocks\socks5-server.h
+	"socks-common.h"
+	"client.h"
+
+1453610223 e:\workspace\git\ssocks\src\win_getopt.h
+	<string.h>
+	<wchar.h>
+
+1453302415 source:e:\workspace\git\ssocks\src\win_getopt.c
+	<stdlib.h>
+	<stdio.h>
+	<malloc.h>
+	"win_getopt.h"
+
+1453302415 source:e:\workspace\git\ssocks\src\rcsocks.c
+	<libsocks/bor-util.h>
+	<libsocks/net-util.h>
+	<libsocks/output-util.h>
+	<libsocks/socks-common.h>
+	<libsocks/socks5-client.h>
+	<libsocks/socks5-server.h>
+	<config.h>
+	"win_getopt.h"
+	<getopt.h>
+

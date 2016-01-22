@@ -111,6 +111,11 @@ int new_listen_socket (const char *bindAddr, int nport, int backlog, struct sock
     hints.ai_family = AF_INET;
     hints.ai_socktype = SOCK_STREAM;
     hints.ai_protocol = 0;
+#define AI_NUMERICSERV            0x0008
+#define AI_ALL                    0x0100
+#define AI_ADDRCONFIG             0x0400
+#define AI_V4MAPPED               0x0800
+
     hints.ai_flags = AI_V4MAPPED | AI_ADDRCONFIG | AI_PASSIVE | AI_NUMERICSERV;
 
     error = getaddrinfo(bindAddr, _uitoa(nport, &portstring), &hints, &res);

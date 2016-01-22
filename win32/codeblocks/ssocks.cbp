@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ssocks" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="libsocks">
+				<Option output="bin/ssocks" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/libsocks/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-D_WIN32" />
+					<Add option="-D_WIN32_WINNT 0x0601" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lws2_32" />
+				</Linker>
+			</Target>
+			<Target title="rssocks">
+				<Option output="bin/rssocks" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/rssocks/" />
+				<Option additional_output="bin/libssocks.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DSTATIC_GETOPT" />
+					<Add option="-D_WIN32" />
+					<Add option="-D_WIN32_WINNT 0x0601" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lws2_32" />
+					<Add library="bin\libssocks.a" />
+				</Linker>
+			</Target>
+			<Target title="rcsocks">
+				<Option output="bin/rcsocks" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/rcsocks/" />
+				<Option additional_output="bin/libssocks.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DSTATIC_GETOPT" />
+					<Add option="-D_WIN32" />
+					<Add option="-D_WIN32_WINNT 0x0601" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lws2_32" />
+					<Add library="bin\libssocks.a" />
+				</Linker>
+			</Target>
+			<Target title="ssocks">
+				<Option output="bin/ssocks" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/" />
+				<Option additional_output="bin/libssocks.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DSTATIC_GETOPT" />
+					<Add option="-D_WIN32" />
+					<Add option="-D_WIN32_WINNT 0x0601" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lws2_32" />
+					<Add library="bin\libssocks.a" />
+				</Linker>
+			</Target>
+			<Target title="ssocksd">
+				<Option output="bin/ssocksd" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/ssocksd" />
+				<Option additional_output="bin/libssocks.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DSTATIC_GETOPT" />
+					<Add option="-D_WIN32" />
+					<Add option="-D_WIN32_WINNT 0x0601" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lws2_32" />
+					<Add library="bin\libssocks.a" />
+				</Linker>
+			</Target>
+			<Target title="nsocks">
+				<Option output="bin/nsocks" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/nsocks/" />
+				<Option additional_output="bin/libssocks.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DSTATIC_GETOPT" />
+					<Add option="-D_WIN32" />
+					<Add option="-D_WIN32_WINNT 0x0601" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lws2_32" />
+					<Add library="bin\libssocks.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="libsocks;rssocks;rcsocks;ssocks;ssocksd;nsocks;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../../src/" />
+		</Compiler>
+		<Linker>
+			<Add option="-lws2_32" />
+		</Linker>
+		<Unit filename="../../src/auth-util.c">
+			<Option compilerVar="CC" />
+			<Option target="rssocks" />
+			<Option target="rcsocks" />
+			<Option target="ssocks" />
+			<Option target="ssocksd" />
+			<Option target="nsocks" />
+		</Unit>
+		<Unit filename="../../src/auth-util.h" />
+		<Unit filename="../../src/config.h" />
+		<Unit filename="../../src/configd-util.c">
+			<Option compilerVar="CC" />
+			<Option target="rssocks" />
+			<Option target="rcsocks" />
+			<Option target="ssocks" />
+			<Option target="ssocksd" />
+			<Option target="nsocks" />
+		</Unit>
+		<Unit filename="../../src/configd-util.h" />
+		<Unit filename="../../src/libsocks/bor-util.c">
+			<Option compilerVar="CC" />
+			<Option target="libsocks" />
+		</Unit>
+		<Unit filename="../../src/libsocks/bor-util.h" />
+		<Unit filename="../../src/libsocks/client.c">
+			<Option compilerVar="CC" />
+			<Option target="libsocks" />
+		</Unit>
+		<Unit filename="../../src/libsocks/client.h" />
+		<Unit filename="../../src/libsocks/log-util.c">
+			<Option compilerVar="CC" />
+			<Option target="libsocks" />
+		</Unit>
+		<Unit filename="../../src/libsocks/log-util.h" />
+		<Unit filename="../../src/libsocks/net-util.c">
+			<Option compilerVar="CC" />
+			<Option target="libsocks" />
+		</Unit>
+		<Unit filename="../../src/libsocks/net-util.h" />
+		<Unit filename="../../src/libsocks/output-util.c">
+			<Option compilerVar="CC" />
+			<Option target="libsocks" />
+		</Unit>
+		<Unit filename="../../src/libsocks/output-util.h" />
+		<Unit filename="../../src/libsocks/socks-common.c">
+			<Option compilerVar="CC" />
+			<Option target="libsocks" />
+		</Unit>
+		<Unit filename="../../src/libsocks/socks-common.h" />
+		<Unit filename="../../src/libsocks/socks4.c">
+			<Option compilerVar="CC" />
+			<Option target="libsocks" />
+		</Unit>
+		<Unit filename="../../src/libsocks/socks4.h" />
+		<Unit filename="../../src/libsocks/socks5-client.c">
+			<Option compilerVar="CC" />
+			<Option target="libsocks" />
+		</Unit>
+		<Unit filename="../../src/libsocks/socks5-client.h" />
+		<Unit filename="../../src/libsocks/socks5-server.c">
+			<Option compilerVar="CC" />
+			<Option target="libsocks" />
+		</Unit>
+		<Unit filename="../../src/libsocks/socks5-server.h" />
+		<Unit filename="../../src/libsocks/ssl-util.c">
+			<Option compilerVar="CC" />
+			<Option target="libsocks" />
+		</Unit>
+		<Unit filename="../../src/libsocks/ssl-util.h" />
+		<Unit filename="../../src/libsocks/unisocket.h" />
+		<Unit filename="../../src/nsocks.c">
+			<Option compilerVar="CC" />
+			<Option target="nsocks" />
+		</Unit>
+		<Unit filename="../../src/rcsocks.c">
+			<Option compilerVar="CC" />
+			<Option target="rcsocks" />
+		</Unit>
+		<Unit filename="../../src/rssocks.c">
+			<Option compilerVar="CC" />
+			<Option target="rssocks" />
+			<Option target="libsocks" />
+		</Unit>
+		<Unit filename="../../src/ssocks.c">
+			<Option compilerVar="CC" />
+			<Option target="ssocks" />
+		</Unit>
+		<Unit filename="../../src/ssocksd.c">
+			<Option compilerVar="CC" />
+			<Option target="ssocksd" />
+		</Unit>
+		<Unit filename="../../src/win_getopt.c">
+			<Option compilerVar="CC" />
+			<Option target="rssocks" />
+			<Option target="rcsocks" />
+			<Option target="ssocks" />
+			<Option target="ssocksd" />
+			<Option target="nsocks" />
+		</Unit>
+		<Unit filename="../../src/win_getopt.h">
+			<Option target="rssocks" />
+			<Option target="rcsocks" />
+			<Option target="ssocks" />
+			<Option target="ssocksd" />
+			<Option target="nsocks" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

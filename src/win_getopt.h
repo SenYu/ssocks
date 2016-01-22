@@ -82,9 +82,9 @@ EXPRESSLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
 _BEGIN_EXTERN_C
 
-extern _GETOPT_API int optind;
-extern _GETOPT_API int opterr;
-extern _GETOPT_API int optopt;
+ _GETOPT_API int optind;
+ _GETOPT_API int opterr;
+ _GETOPT_API int optopt;
 
 // Ansi
 struct option_a
