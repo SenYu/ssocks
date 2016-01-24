@@ -16,11 +16,10 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add option="-D_WIN32" />
-					<Add option="-D_WIN32_WINNT 0x0601" />
+					<Add option="-D_WIN32_WINNT=0x0601" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add option="-lws2_32" />
 				</Linker>
 			</Target>
 			<Target title="rssocks">
@@ -34,12 +33,12 @@
 					<Add option="-O2" />
 					<Add option="-DSTATIC_GETOPT" />
 					<Add option="-D_WIN32" />
-					<Add option="-D_WIN32_WINNT 0x0601" />
+					<Add option="-D_WIN32_WINNT=0x0601" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add option="-lws2_32" />
 					<Add library="bin\libssocks.a" />
+					<Add library="ws2_32" />
 				</Linker>
 			</Target>
 			<Target title="rcsocks">
@@ -53,12 +52,12 @@
 					<Add option="-O2" />
 					<Add option="-DSTATIC_GETOPT" />
 					<Add option="-D_WIN32" />
-					<Add option="-D_WIN32_WINNT 0x0601" />
+					<Add option="-D_WIN32_WINNT=0x0601" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add option="-lws2_32" />
 					<Add library="bin\libssocks.a" />
+					<Add library="ws2_32" />
 				</Linker>
 			</Target>
 			<Target title="ssocks">
@@ -72,12 +71,12 @@
 					<Add option="-O2" />
 					<Add option="-DSTATIC_GETOPT" />
 					<Add option="-D_WIN32" />
-					<Add option="-D_WIN32_WINNT 0x0601" />
+					<Add option="-D_WIN32_WINNT=0x0601" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add option="-lws2_32" />
 					<Add library="bin\libssocks.a" />
+					<Add library="ws2_32" />
 				</Linker>
 			</Target>
 			<Target title="ssocksd">
@@ -91,12 +90,12 @@
 					<Add option="-O2" />
 					<Add option="-DSTATIC_GETOPT" />
 					<Add option="-D_WIN32" />
-					<Add option="-D_WIN32_WINNT 0x0601" />
+					<Add option="-D_WIN32_WINNT=0x0601" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add option="-lws2_32" />
 					<Add library="bin\libssocks.a" />
+					<Add library="ws2_32" />
 				</Linker>
 			</Target>
 			<Target title="nsocks">
@@ -110,12 +109,12 @@
 					<Add option="-O2" />
 					<Add option="-DSTATIC_GETOPT" />
 					<Add option="-D_WIN32" />
-					<Add option="-D_WIN32_WINNT 0x0601" />
+					<Add option="-D_WIN32_WINNT=0x0601" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add option="-lws2_32" />
 					<Add library="bin\libssocks.a" />
+					<Add library="ws2_32" />
 				</Linker>
 			</Target>
 		</Build>
@@ -126,9 +125,6 @@
 			<Add option="-Wall" />
 			<Add directory="../../src/" />
 		</Compiler>
-		<Linker>
-			<Add option="-lws2_32" />
-		</Linker>
 		<Unit filename="../../src/auth-util.c">
 			<Option compilerVar="CC" />
 			<Option target="rssocks" />

@@ -36,7 +36,6 @@
 
 #include <config.h>
 
-#define _WIN32
 #ifdef _WIN32
 #include "win_getopt.h"
 #else
