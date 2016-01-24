@@ -1,3 +1,13 @@
+Something from SenYu:
+
+- code::blocks project for fast building (see `/win32/codeblocks`)
+- visual studio solution (going on)
+- built archive for download (see `/build/*`)
+
+If something goes wrong on Windows 7, please let me know. (See `Issue`)
+
+------------------------------------------------------------------------
+
 About:
 
 sSocks is a package which contains: a socks5 server implements RFC 1928 (SOCKS V5) 
